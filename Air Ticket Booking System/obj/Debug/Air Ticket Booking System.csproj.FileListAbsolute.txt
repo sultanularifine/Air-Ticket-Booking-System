@@ -1,0 +1,12 @@
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\bin\Debug\Air Ticket Booking System.exe.config
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\bin\Debug\Air Ticket Booking System.exe
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\bin\Debug\Air Ticket Booking System.pdb
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air Ticket Booking System.csproj.AssemblyReference.cache
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air Ticket Booking System.csproj.SuggestedBindingRedirects.cache
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air_Ticket_Booking_System.Properties.Resources.resources
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air Ticket Booking System.csproj.GenerateResource.cache
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air Ticket Booking System.csproj.CoreCompileInputs.cache
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air Ticket Booking System.exe
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air Ticket Booking System.pdb
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air_Ticket_Booking_System.Dashboard.resources
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air_Ticket_Booking_System.Signin.resources
