@@ -12,7 +12,7 @@ namespace Air_Ticket_Booking_System
 {
     public partial class Signin : Form
     {
-        string email;
+        
         public Signin()
         {
             InitializeComponent();
@@ -47,5 +47,6 @@ namespace Air_Ticket_Booking_System
         {
             Application.Exit();
         }
+
     }
 }

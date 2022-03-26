@@ -35,23 +35,24 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FcodeTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.FSrc = new System.Windows.Forms.ComboBox();
+            this.FDest = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.FTime = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.FDate = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.FClass = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.SeatNum = new System.Windows.Forms.TextBox();
+            this.FPrice = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -139,13 +140,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Flight Code";
             // 
-            // textBox1
+            // FcodeTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(422, 143);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 31);
-            this.textBox1.TabIndex = 6;
+            this.FcodeTb.Location = new System.Drawing.Point(446, 145);
+            this.FcodeTb.Multiline = true;
+            this.FcodeTb.Name = "FcodeTb";
+            this.FcodeTb.Size = new System.Drawing.Size(133, 31);
+            this.FcodeTb.TabIndex = 6;
             // 
             // label3
             // 
@@ -169,21 +170,35 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Destination";
             // 
-            // comboBox1
+            // FSrc
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(422, 224);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(133, 21);
-            this.comboBox1.TabIndex = 7;
+            this.FSrc.FormattingEnabled = true;
+            this.FSrc.Items.AddRange(new object[] {
+            "Dhaka",
+            "Barisal",
+            "Sylhet ",
+            "Rangpur",
+            "Jessore",
+            "Rajshashi"});
+            this.FSrc.Location = new System.Drawing.Point(446, 225);
+            this.FSrc.Name = "FSrc";
+            this.FSrc.Size = new System.Drawing.Size(133, 21);
+            this.FSrc.TabIndex = 7;
             // 
-            // comboBox2
+            // FDest
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(422, 301);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(133, 21);
-            this.comboBox2.TabIndex = 7;
+            this.FDest.FormattingEnabled = true;
+            this.FDest.Items.AddRange(new object[] {
+            "Dhaka",
+            "Barisal",
+            "Sylhet ",
+            "Rangpur",
+            "Jessore",
+            "Rajshashi"});
+            this.FDest.Location = new System.Drawing.Point(446, 301);
+            this.FDest.Name = "FDest";
+            this.FDest.Size = new System.Drawing.Size(133, 21);
+            this.FDest.TabIndex = 7;
             // 
             // label6
             // 
@@ -196,15 +211,15 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Time";
             // 
-            // dateTimePicker1
+            // FTime
             // 
-            this.dateTimePicker1.CustomFormat = "HHMMSS";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(833, 145);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(141, 20);
-            this.dateTimePicker1.TabIndex = 8;
+            this.FTime.CustomFormat = "HHMMSS";
+            this.FTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.FTime.Location = new System.Drawing.Point(833, 145);
+            this.FTime.Name = "FTime";
+            this.FTime.ShowUpDown = true;
+            this.FTime.Size = new System.Drawing.Size(141, 20);
+            this.FTime.TabIndex = 8;
             // 
             // label7
             // 
@@ -217,13 +232,13 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Date";
             // 
-            // dateTimePicker2
+            // FDate
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(833, 225);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(141, 20);
-            this.dateTimePicker2.TabIndex = 8;
+            this.FDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FDate.Location = new System.Drawing.Point(833, 225);
+            this.FDate.Name = "FDate";
+            this.FDate.Size = new System.Drawing.Size(141, 20);
+            this.FDate.TabIndex = 8;
             // 
             // label8
             // 
@@ -236,14 +251,17 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Class";
             // 
-            // comboBox3
+            // FClass
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(833, 300);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(141, 27);
-            this.comboBox3.TabIndex = 7;
+            this.FClass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FClass.FormattingEnabled = true;
+            this.FClass.Items.AddRange(new object[] {
+            "Business",
+            "Economic"});
+            this.FClass.Location = new System.Drawing.Point(833, 300);
+            this.FClass.Name = "FClass";
+            this.FClass.Size = new System.Drawing.Size(141, 27);
+            this.FClass.TabIndex = 7;
             // 
             // label9
             // 
@@ -252,9 +270,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label9.Location = new System.Drawing.Point(264, 369);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 31);
+            this.label9.Size = new System.Drawing.Size(176, 31);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Available";
+            this.label9.Text = "Num of  Seats";
             // 
             // label10
             // 
@@ -267,33 +285,34 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Price";
             // 
-            // textBox2
+            // SeatNum
             // 
-            this.textBox2.Location = new System.Drawing.Point(422, 369);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 31);
-            this.textBox2.TabIndex = 6;
+            this.SeatNum.Location = new System.Drawing.Point(446, 369);
+            this.SeatNum.Multiline = true;
+            this.SeatNum.Name = "SeatNum";
+            this.SeatNum.Size = new System.Drawing.Size(133, 31);
+            this.SeatNum.TabIndex = 6;
             // 
-            // textBox3
+            // FPrice
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(833, 369);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(141, 31);
-            this.textBox3.TabIndex = 6;
+            this.FPrice.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FPrice.Location = new System.Drawing.Point(833, 369);
+            this.FPrice.Multiline = true;
+            this.FPrice.Name = "FPrice";
+            this.FPrice.Size = new System.Drawing.Size(141, 31);
+            this.FPrice.TabIndex = 6;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.ForeColor = System.Drawing.Color.DarkGray;
-            this.button1.Location = new System.Drawing.Point(546, 455);
+            this.button1.Location = new System.Drawing.Point(471, 455);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 40);
             this.button1.TabIndex = 9;
             this.button1.Text = "ADD FLIGHT";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label2
             // 
@@ -307,20 +326,32 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "ADD FLIGHT";
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.ForeColor = System.Drawing.Color.DarkGray;
+            this.button5.Location = new System.Drawing.Point(667, 455);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(143, 40);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "REST";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1061, 526);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FDate);
+            this.Controls.Add(this.FTime);
+            this.Controls.Add(this.FDest);
+            this.Controls.Add(this.FClass);
+            this.Controls.Add(this.FSrc);
+            this.Controls.Add(this.FPrice);
+            this.Controls.Add(this.SeatNum);
+            this.Controls.Add(this.FcodeTb);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -352,24 +383,25 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FcodeTb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox FSrc;
+        private System.Windows.Forms.ComboBox FDest;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker FTime;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker FDate;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox FClass;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox SeatNum;
+        private System.Windows.Forms.TextBox FPrice;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button5;
     }
 }
