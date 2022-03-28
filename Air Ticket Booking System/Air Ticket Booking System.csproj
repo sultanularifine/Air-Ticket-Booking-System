@@ -52,6 +52,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Flights.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Flights.Designer.cs">
+      <DependentUpon>Flights.cs</DependentUpon>
+    </Compile>
     <Compile Include="Signin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flights.resx">
+      <DependentUpon>Flights.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signin.resx">
       <DependentUpon>Signin.cs</DependentUpon>
