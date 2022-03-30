@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace Air_Ticket_Booking_System
 {
-    public partial class Flights1 : UserControl
+    public partial class Booking : UserControl
     {
-        public Flights1()
+        public Booking()
         {
             InitializeComponent();
         }
 
+        p
     }
 }

@@ -10,4 +10,5 @@ C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\
 C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air Ticket Booking System.pdb
 C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air_Ticket_Booking_System.Dashboard.resources
 C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air_Ticket_Booking_System.Signin.resources
-C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air_Ticket_Booking_System.Flight.resources
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air_Ticket_Booking_System.Flights1.resources
+C:\Users\sulta\source\repos\Air Ticket Booking System\Air Ticket Booking System\obj\Debug\Air_Ticket_Booking_System.Booking.resources
