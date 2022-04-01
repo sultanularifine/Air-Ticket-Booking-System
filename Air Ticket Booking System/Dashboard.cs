@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+
+
 namespace Air_Ticket_Booking_System
 {
     public partial class Dashboard : Form
@@ -16,64 +17,70 @@ namespace Air_Ticket_Booking_System
         {
             InitializeComponent();
         }
-
-        
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sulta\Documents\AirticketDb.mdf;Integrated Security=True;Connect Timeout=30");
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void passengers1_Load(object sender, EventArgs e)
         {
+            addflight1.Hide();
+            flights11.Hide();
+            booking1.Hide();
+            passengers1.Hide();
+            setting1.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            flights11.Hide();
+            booking1.Hide();
+            passengers1.Hide();
+            addflight1.Show();
+            setting1.Hide();
+            addflight1.BringToFront();
 
         }
 
-        private void Dashboard_Load(object sender, EventArgs e)
+        private void Flights_Click(object sender, EventArgs e)
         {
-
+            addflight1.Hide();
+            flights11.Show();
+            booking1.Hide();
+            passengers1.Hide();
+            setting1.Hide();
+            flights11.BringToFront();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            addflight1.Hide();
+            flights11.Hide();
+            booking1.Show();
+            passengers1.Hide();
+            setting1.Hide();
+            booking1.BringToFront();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-
+            addflight1.Hide();
+            flights11.Hide();
+            booking1.Hide();
+            passengers1.Show();
+            setting1.Hide();
+            passengers1.BringToFront();
         }
 
-        
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-            if (FcodeTb.Text == String.Empty && FSrc.Text == String.Empty && FDest.Text == String.Empty && FDate.Text == String.Empty && FClass.Text == String.Empty && FPrice.Text == String.Empty && SeatNum.Text == String.Empty)
-            {
-                MessageBox.Show(" Missing Information");
-            }
-            else
-            {
-                try
-                {
-                    Con.Open();
-                    string query = "insert into FlightTbl values('" + FcodeTb.Text + "','" + FSrc.SelectedItem.ToString() + "','" + FDest.SelectedItem.ToString() + "','" + FDate.Value.ToString() + "','" + SeatNum.Text + "','" + FClass.SelectedItem.ToString() + "','" + FPrice.Text + "')";
-                    SqlCommand cmd = new SqlCommand(query, Con);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Flight Record Succesfully");
-                    Con.Close();
-                }
-                catch (Exception Ex)
-
-                {
-                    MessageBox.Show(Ex.Message);
-                }
-            }
+            addflight1.Hide();
+            flights11.Hide();
+            booking1.Hide();
+            passengers1.Hide();
+            setting1.Show();
+           setting1.BringToFront();
         }
     }
 }

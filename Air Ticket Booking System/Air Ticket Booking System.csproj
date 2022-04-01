@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addflight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Addflight.Designer.cs">
+      <DependentUpon>Addflight.cs</DependentUpon>
+    </Compile>
     <Compile Include="Booking.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -64,6 +70,18 @@
     <Compile Include="Flights.Designer.cs">
       <DependentUpon>Flights.cs</DependentUpon>
     </Compile>
+    <Compile Include="Passengers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Passengers.Designer.cs">
+      <DependentUpon>Passengers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Signin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Addflight.resx">
+      <DependentUpon>Addflight.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Booking.resx">
       <DependentUpon>Booking.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Flights.resx">
       <DependentUpon>Flights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passengers.resx">
+      <DependentUpon>Passengers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signin.resx">
       <DependentUpon>Signin.cs</DependentUpon>
