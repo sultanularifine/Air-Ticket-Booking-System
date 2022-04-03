@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.FDate = new System.Windows.Forms.DateTimePicker();
@@ -42,11 +43,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.FlightDGV = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.FClass = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.FlightDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -119,7 +122,7 @@
             // FPrice
             // 
             this.FPrice.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FPrice.Location = new System.Drawing.Point(624, 111);
+            this.FPrice.Location = new System.Drawing.Point(624, 151);
             this.FPrice.Multiline = true;
             this.FPrice.Name = "FPrice";
             this.FPrice.Size = new System.Drawing.Size(141, 29);
@@ -127,7 +130,7 @@
             // 
             // SeatNum
             // 
-            this.SeatNum.Location = new System.Drawing.Point(624, 152);
+            this.SeatNum.Location = new System.Drawing.Point(483, 187);
             this.SeatNum.Multiline = true;
             this.SeatNum.Name = "SeatNum";
             this.SeatNum.Size = new System.Drawing.Size(141, 27);
@@ -146,7 +149,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label10.Location = new System.Drawing.Point(450, 111);
+            this.label10.Location = new System.Drawing.Point(450, 151);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(75, 31);
             this.label10.TabIndex = 30;
@@ -157,7 +160,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label9.Location = new System.Drawing.Point(450, 152);
+            this.label9.Location = new System.Drawing.Point(309, 187);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(176, 31);
             this.label9.TabIndex = 29;
@@ -207,59 +210,98 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Flight Code";
             // 
-            // dataGridView1
+            // FlightDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 263);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(807, 251);
-            this.dataGridView1.TabIndex = 37;
+            this.FlightDGV.BackgroundColor = System.Drawing.Color.Beige;
+            this.FlightDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.FlightDGV.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.FlightDGV.DefaultCellStyle = dataGridViewCellStyle1;
+            this.FlightDGV.Location = new System.Drawing.Point(18, 274);
+            this.FlightDGV.Name = "FlightDGV";
+            this.FlightDGV.Size = new System.Drawing.Size(807, 240);
+            this.FlightDGV.TabIndex = 40;
+            this.FlightDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FlightDGV_CellContentClick);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.ForeColor = System.Drawing.Color.DarkGray;
-            this.button1.Location = new System.Drawing.Point(174, 205);
+            this.button1.Location = new System.Drawing.Point(174, 229);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 40);
             this.button1.TabIndex = 38;
             this.button1.Text = "UPDATE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.ForeColor = System.Drawing.Color.DarkGray;
-            this.button3.Location = new System.Drawing.Point(334, 205);
+            this.button3.Location = new System.Drawing.Point(334, 229);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(143, 40);
             this.button3.TabIndex = 38;
             this.button3.Text = "DELETE";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.ForeColor = System.Drawing.Color.DarkGray;
-            this.button4.Location = new System.Drawing.Point(507, 205);
+            this.button4.Location = new System.Drawing.Point(507, 229);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(143, 40);
             this.button4.TabIndex = 38;
             this.button4.Text = "RESET";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // FClass
+            // 
+            this.FClass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FClass.FormattingEnabled = true;
+            this.FClass.Items.AddRange(new object[] {
+            "Business",
+            "Economic"});
+            this.FClass.Location = new System.Drawing.Point(624, 111);
+            this.FClass.Name = "FClass";
+            this.FClass.Size = new System.Drawing.Size(141, 27);
+            this.FClass.TabIndex = 40;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label8.Location = new System.Drawing.Point(450, 111);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(78, 31);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "Class";
             // 
             // Flights1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.Controls.Add(this.FClass);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.FlightDGV);
             this.Controls.Add(this.FDate);
             this.Controls.Add(this.FDest);
             this.Controls.Add(this.FSrc);
@@ -276,7 +318,8 @@
             this.Controls.Add(this.label2);
             this.Name = "Flights1";
             this.Size = new System.Drawing.Size(842, 526);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Flights1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.FlightDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,9 +341,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView FlightDGV;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox FClass;
+        private System.Windows.Forms.Label label8;
     }
 }

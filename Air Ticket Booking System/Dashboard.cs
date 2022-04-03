@@ -82,5 +82,8 @@ namespace Air_Ticket_Booking_System
             setting1.Show();
            setting1.BringToFront();
         }
+
+        
+        
     }
 }

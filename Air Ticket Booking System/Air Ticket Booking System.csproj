@@ -70,6 +70,12 @@
     <Compile Include="Flights.Designer.cs">
       <DependentUpon>Flights.cs</DependentUpon>
     </Compile>
+    <Compile Include="Signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signin.Designer.cs">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Passengers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,12 +87,6 @@
     </Compile>
     <Compile Include="Setting.Designer.cs">
       <DependentUpon>Setting.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Signin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Signin.Designer.cs">
-      <DependentUpon>Signin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,14 +102,14 @@
     <EmbeddedResource Include="Flights.resx">
       <DependentUpon>Flights.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Signin.resx">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Passengers.resx">
       <DependentUpon>Passengers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Setting.resx">
       <DependentUpon>Setting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Signin.resx">
-      <DependentUpon>Signin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

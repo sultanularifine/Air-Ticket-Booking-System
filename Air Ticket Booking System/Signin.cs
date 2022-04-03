@@ -12,17 +12,15 @@ namespace Air_Ticket_Booking_System
 {
     public partial class Signin : Form
     {
-        
         public Signin()
         {
             InitializeComponent();
         }
 
-       
-
         private void button1_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text != String.Empty && textBox2.Text != String.Empty)
+
+            if (textBox1.Text != String.Empty && textBox2.Text != String.Empty)
             {
                 if (textBox1.Text == "admin" && textBox2.Text == "admin")
                 {
@@ -37,16 +35,11 @@ namespace Air_Ticket_Booking_System
                     MessageBox.Show("Username or Password Incorrect.");
                 }
             }
-            else
-            {
-                MessageBox.Show("Please input username & password.");
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
     }
 }

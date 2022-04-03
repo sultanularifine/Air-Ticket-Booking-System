@@ -105,6 +105,7 @@
             this.button5.TabIndex = 26;
             this.button5.Text = "RESET";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button1
             // 
@@ -149,7 +150,7 @@
             this.FClass.Items.AddRange(new object[] {
             "Business",
             "Economic"});
-            this.FClass.Location = new System.Drawing.Point(627, 188);
+            this.FClass.Location = new System.Drawing.Point(627, 181);
             this.FClass.Name = "FClass";
             this.FClass.Size = new System.Drawing.Size(141, 27);
             this.FClass.TabIndex = 22;

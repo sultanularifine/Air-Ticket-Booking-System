@@ -38,12 +38,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.setting1 = new Air_Ticket_Booking_System.Setting();
             this.passengers1 = new Air_Ticket_Booking_System.Passengers();
             this.booking1 = new Air_Ticket_Booking_System.Booking();
             this.flights11 = new Air_Ticket_Booking_System.Flights1();
             this.addflight1 = new Air_Ticket_Booking_System.Addflight();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -185,18 +185,6 @@
             this.panel3.Size = new System.Drawing.Size(842, 526);
             this.panel3.TabIndex = 6;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(322, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 31);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "DASHBOARD";
-            // 
             // setting1
             // 
             this.setting1.BackColor = System.Drawing.Color.MediumSpringGreen;
@@ -204,6 +192,7 @@
             this.setting1.Name = "setting1";
             this.setting1.Size = new System.Drawing.Size(842, 526);
             this.setting1.TabIndex = 22;
+           
             // 
             // passengers1
             // 
@@ -237,6 +226,18 @@
             this.addflight1.Size = new System.Drawing.Size(842, 526);
             this.addflight1.TabIndex = 18;
             this.addflight1.Tag = "Addflight";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(322, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(187, 31);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "DASHBOARD";
             // 
             // Dashboard
             // 
