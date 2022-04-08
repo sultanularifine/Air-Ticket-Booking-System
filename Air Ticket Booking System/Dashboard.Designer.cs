@@ -38,6 +38,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.about1 = new Air_Ticket_Booking_System.about();
             this.setting1 = new Air_Ticket_Booking_System.Setting();
             this.passengers1 = new Air_Ticket_Booking_System.Passengers();
             this.booking1 = new Air_Ticket_Booking_System.Booking();
@@ -173,6 +174,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.panel3.Controls.Add(this.about1);
             this.panel3.Controls.Add(this.setting1);
             this.panel3.Controls.Add(this.passengers1);
             this.panel3.Controls.Add(this.booking1);
@@ -185,14 +187,21 @@
             this.panel3.Size = new System.Drawing.Size(842, 526);
             this.panel3.TabIndex = 6;
             // 
+            // about1
+            // 
+            this.about1.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.about1.Location = new System.Drawing.Point(3, 0);
+            this.about1.Name = "about1";
+            this.about1.Size = new System.Drawing.Size(842, 526);
+            this.about1.TabIndex = 23;
+            // 
             // setting1
             // 
             this.setting1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.setting1.Location = new System.Drawing.Point(0, 0);
+            this.setting1.Location = new System.Drawing.Point(-1, 0);
             this.setting1.Name = "setting1";
             this.setting1.Size = new System.Drawing.Size(842, 526);
             this.setting1.TabIndex = 22;
-           
             // 
             // passengers1
             // 
@@ -276,5 +285,6 @@
         private Booking booking1;
         private Flights1 flights11;
         private Setting setting1;
+        private about about1;
     }
 }

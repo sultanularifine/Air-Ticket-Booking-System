@@ -29,6 +29,7 @@ namespace Air_Ticket_Booking_System
             booking1.Hide();
             passengers1.Hide();
             setting1.Hide();
+            about1.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -39,7 +40,7 @@ namespace Air_Ticket_Booking_System
             addflight1.Show();
             setting1.Hide();
             addflight1.BringToFront();
-
+            about1.Hide();
         }
 
         private void Flights_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace Air_Ticket_Booking_System
             flights11.Show();
             booking1.Hide();
             passengers1.Hide();
+            about1.Hide();
             setting1.Hide();
             flights11.BringToFront();
         }
@@ -58,6 +60,7 @@ namespace Air_Ticket_Booking_System
             flights11.Hide();
             booking1.Show();
             passengers1.Hide();
+            about1.Hide();
             setting1.Hide();
             booking1.BringToFront();
         }
@@ -67,6 +70,7 @@ namespace Air_Ticket_Booking_System
             addflight1.Hide();
             flights11.Hide();
             booking1.Hide();
+            about1.Hide();
             passengers1.Show();
             setting1.Hide();
             passengers1.BringToFront();
@@ -79,11 +83,11 @@ namespace Air_Ticket_Booking_System
             flights11.Hide();
             booking1.Hide();
             passengers1.Hide();
+            about1.Hide();
             setting1.Show();
            setting1.BringToFront();
         }
 
-        
         
     }
 }
