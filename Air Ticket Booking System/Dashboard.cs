@@ -88,6 +88,9 @@ namespace Air_Ticket_Booking_System
            setting1.BringToFront();
         }
 
-        
+        private void Dashboard_Activated(object sender, EventArgs e)
+        {
+            //flights11.populate();
+        }
     }
 }

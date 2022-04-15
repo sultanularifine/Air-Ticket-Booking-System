@@ -22,7 +22,7 @@ namespace Air_Ticket_Booking_System
             Application.Exit();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sulta\Documents\AirticketDb.mdf;Integrated Security=True;Connect Timeout=30");
-        private void populate()
+        public void populate()
         {
             Con.Open();
             String query = "select * from FlightTbl";
