@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.AddFlight11 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             // AddFlight11
             // 
             this.AddFlight11.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.AddFlight11.Controls.Add(this.button3);
             this.AddFlight11.Controls.Add(this.button2);
             this.AddFlight11.Controls.Add(this.button5);
             this.AddFlight11.Controls.Add(this.button1);
@@ -77,16 +79,32 @@
             this.AddFlight11.TabIndex = 8;
             this.AddFlight11.Tag = "AddFlight11";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Azure;
+            this.button3.Location = new System.Drawing.Point(779, -16);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(35, 40);
+            this.button3.TabIndex = 27;
+            this.button3.Text = "-";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.button2.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Azure;
-            this.button2.Location = new System.Drawing.Point(798, 3);
+            this.button2.Location = new System.Drawing.Point(809, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(36, 33);
             this.button2.TabIndex = 2;
@@ -319,5 +337,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
     }
 }

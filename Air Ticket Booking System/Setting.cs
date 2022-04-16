@@ -24,18 +24,7 @@ namespace Air_Ticket_Booking_System
             Application.Exit();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-            about1.Show();
-            about1.BringToFront();
-           
-        }
-
-        private void about1_Load(object sender, EventArgs e)
-        {
-            about1.Hide();
-            
-        }
+      
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -55,5 +44,6 @@ namespace Air_Ticket_Booking_System
                 MessageBox.Show(Ex.Message);
             }
         }
+
     }
 }

@@ -41,5 +41,10 @@ namespace Air_Ticket_Booking_System
         {
             Application.Exit();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState= FormWindowState.Minimized;
+        }
     }
 }

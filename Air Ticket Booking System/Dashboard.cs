@@ -92,5 +92,24 @@ namespace Air_Ticket_Booking_System
         {
             //flights11.populate();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            addflight1.Hide();
+            flights11.Hide();
+            booking1.Hide();
+            passengers1.Hide();
+            about1.Show();
+            setting1.Hide();
+            setting1.BringToFront();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+       
     }
 }
