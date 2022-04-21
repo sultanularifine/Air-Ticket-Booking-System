@@ -48,6 +48,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.fTime = new System.Windows.Forms.DateTimePicker();
             this.AddFlight11.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +60,7 @@
             this.AddFlight11.Controls.Add(this.button2);
             this.AddFlight11.Controls.Add(this.button5);
             this.AddFlight11.Controls.Add(this.button1);
+            this.AddFlight11.Controls.Add(this.fTime);
             this.AddFlight11.Controls.Add(this.FDate);
             this.AddFlight11.Controls.Add(this.FDest);
             this.AddFlight11.Controls.Add(this.FClass);
@@ -67,6 +70,7 @@
             this.AddFlight11.Controls.Add(this.FcodeTb);
             this.AddFlight11.Controls.Add(this.label10);
             this.AddFlight11.Controls.Add(this.label9);
+            this.AddFlight11.Controls.Add(this.label4);
             this.AddFlight11.Controls.Add(this.label8);
             this.AddFlight11.Controls.Add(this.label7);
             this.AddFlight11.Controls.Add(this.label5);
@@ -140,7 +144,7 @@
             // 
             // FDate
             // 
-            this.FDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.FDate.Location = new System.Drawing.Point(627, 113);
             this.FDate.Name = "FDate";
             this.FDate.Size = new System.Drawing.Size(141, 20);
@@ -168,7 +172,7 @@
             this.FClass.Items.AddRange(new object[] {
             "Business",
             "Economic"});
-            this.FClass.Location = new System.Drawing.Point(627, 181);
+            this.FClass.Location = new System.Drawing.Point(627, 202);
             this.FClass.Name = "FClass";
             this.FClass.Size = new System.Drawing.Size(141, 27);
             this.FClass.TabIndex = 22;
@@ -240,7 +244,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label8.Location = new System.Drawing.Point(530, 178);
+            this.label8.Location = new System.Drawing.Point(530, 199);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 31);
             this.label8.TabIndex = 14;
@@ -302,6 +306,26 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Flight Code";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label4.Location = new System.Drawing.Point(530, 144);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 31);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Date";
+            // 
+            // fTime
+            // 
+            this.fTime.CustomFormat = "hh:mm tt";
+            this.fTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.fTime.Location = new System.Drawing.Point(627, 155);
+            this.fTime.Name = "fTime";
+            this.fTime.Size = new System.Drawing.Size(141, 20);
+            this.fTime.TabIndex = 24;
+            // 
             // Addflight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,5 +362,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DateTimePicker fTime;
+        private System.Windows.Forms.Label label4;
     }
 }

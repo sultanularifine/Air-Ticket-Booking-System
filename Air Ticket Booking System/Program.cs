@@ -16,7 +16,7 @@ namespace Air_Ticket_Booking_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Signin());
+            Application.Run(new Dashboard());
         }
     }
 }

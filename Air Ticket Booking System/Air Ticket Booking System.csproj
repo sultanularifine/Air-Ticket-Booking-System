@@ -70,6 +70,7 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBFunction.cs" />
     <Compile Include="Flights.cs">
       <SubType>UserControl</SubType>
     </Compile>

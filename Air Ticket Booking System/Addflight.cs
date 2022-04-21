@@ -28,7 +28,7 @@ namespace Air_Ticket_Booking_System
                 try
                 {
                     Con.Open();
-                    string query = "insert into FlightTbl values('" + FcodeTb.Text + "','" + FSrc.SelectedItem.ToString() + "','" + FDest.SelectedItem.ToString() + "','" + FDate.Value.ToString() + "','" + SeatNum.Text + "','"  + FClass.SelectedItem.ToString() + "','" + FPrice.Text+ "')";
+                    string query = "insert into FlightTbl values('" + FcodeTb.Text + "','" + FSrc.SelectedItem.ToString() + "','" + FDest.SelectedItem.ToString() + "','" + FDate.Value.ToString() + "','"+fTime.Value.ToString("hh:mm tt") +"','" + SeatNum.Text + "','"  + FClass.SelectedItem.ToString() + "','" + FPrice.Text+ "')";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Flight Record Succesfully");

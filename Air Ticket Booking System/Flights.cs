@@ -51,9 +51,11 @@ namespace Air_Ticket_Booking_System
             FcodeTb.Text = FlightDGV.CurrentRow.Cells[0].Value.ToString();
             FSrc.SelectedItem = FlightDGV.CurrentRow.Cells[1].Value.ToString();
             FDest.SelectedItem = FlightDGV.CurrentRow.Cells[2].Value.ToString();
-            SeatNum.Text = FlightDGV.CurrentRow.Cells[4].Value.ToString();
-            FClass.Text = FlightDGV.CurrentRow.Cells[5].Value.ToString();
-            FPrice.Text = FlightDGV.CurrentRow.Cells[6].Value.ToString();
+            FDate.Text = FlightDGV.CurrentRow.Cells[3].Value.ToString();
+            FTime.Text = FlightDGV.CurrentRow.Cells[4].Value.ToString();
+            SeatNum.Text = FlightDGV.CurrentRow.Cells[5].Value.ToString();
+            FClass.Text = FlightDGV.CurrentRow.Cells[6].Value.ToString();
+            FPrice.Text = FlightDGV.CurrentRow.Cells[7].Value.ToString();
 
         }
 
