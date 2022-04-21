@@ -21,8 +21,5 @@ namespace Air_Ticket_Booking_System
         {
             Application.Exit();
         }
-
-        
-
     }
 }

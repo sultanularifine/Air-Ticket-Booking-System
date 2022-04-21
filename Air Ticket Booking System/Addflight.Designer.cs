@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.AddFlight11 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.fTime = new System.Windows.Forms.DateTimePicker();
             this.FDate = new System.Windows.Forms.DateTimePicker();
             this.FDest = new System.Windows.Forms.ComboBox();
             this.FClass = new System.Windows.Forms.ComboBox();
@@ -42,21 +42,19 @@
             this.FcodeTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.fTime = new System.Windows.Forms.DateTimePicker();
             this.AddFlight11.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddFlight11
             // 
-            this.AddFlight11.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.AddFlight11.Controls.Add(this.button3);
+            this.AddFlight11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
             this.AddFlight11.Controls.Add(this.button2);
             this.AddFlight11.Controls.Add(this.button5);
             this.AddFlight11.Controls.Add(this.button1);
@@ -83,25 +81,9 @@
             this.AddFlight11.TabIndex = 8;
             this.AddFlight11.Tag = "AddFlight11";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Azure;
-            this.button3.Location = new System.Drawing.Point(779, -16);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 40);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "-";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
             this.button2.FlatAppearance.BorderSize = 0;
@@ -141,6 +123,15 @@
             this.button1.Text = "ADD FLIGHT";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // fTime
+            // 
+            this.fTime.CustomFormat = "hh:mm tt";
+            this.fTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.fTime.Location = new System.Drawing.Point(627, 155);
+            this.fTime.Name = "fTime";
+            this.fTime.Size = new System.Drawing.Size(141, 20);
+            this.fTime.TabIndex = 24;
             // 
             // FDate
             // 
@@ -239,6 +230,17 @@
             this.label9.TabIndex = 15;
             this.label9.Text = "Num of  Seats";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label4.Location = new System.Drawing.Point(530, 144);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 31);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Date";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -306,26 +308,6 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Flight Code";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label4.Location = new System.Drawing.Point(530, 144);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 31);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Date";
-            // 
-            // fTime
-            // 
-            this.fTime.CustomFormat = "hh:mm tt";
-            this.fTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fTime.Location = new System.Drawing.Point(627, 155);
-            this.fTime.Name = "fTime";
-            this.fTime.Size = new System.Drawing.Size(141, 20);
-            this.fTime.TabIndex = 24;
-            // 
             // Addflight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,7 +343,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DateTimePicker fTime;
         private System.Windows.Forms.Label label4;
     }

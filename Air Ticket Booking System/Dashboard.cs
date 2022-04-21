@@ -17,20 +17,9 @@ namespace Air_Ticket_Booking_System
         {
             InitializeComponent();
         }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
-        private void passengers1_Load(object sender, EventArgs e)
-        {
-            addflight1.Hide();
-            flights11.Hide();
-            booking1.Hide();
-            passengers1.Hide();
-            setting1.Hide();
-            about1.Hide();
-        }
+      
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -105,11 +94,17 @@ namespace Air_Ticket_Booking_System
             setting1.BringToFront();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
        
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+            addflight1.Hide();
+            flights11.Hide();
+            booking1.Hide();
+            passengers1.Hide();
+            setting1.Hide();
+            about1.Hide();
+        }
     }
 }

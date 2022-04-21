@@ -61,7 +61,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
             this.button2.FlatAppearance.BorderSize = 0;
@@ -82,7 +82,7 @@
             this.label2.BackColor = System.Drawing.Color.DodgerBlue;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(345, 17);
+            this.label2.Location = new System.Drawing.Point(345, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(146, 31);
             this.label2.TabIndex = 21;
@@ -91,7 +91,7 @@
             // FDate
             // 
             this.FDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.FDate.Location = new System.Drawing.Point(251, 180);
+            this.FDate.Location = new System.Drawing.Point(217, 165);
             this.FDate.Name = "FDate";
             this.FDate.Size = new System.Drawing.Size(141, 20);
             this.FDate.TabIndex = 34;
@@ -106,7 +106,7 @@
             "Rangpur",
             "Jessore",
             "Rajshashi"});
-            this.FDest.Location = new System.Drawing.Point(251, 124);
+            this.FDest.Location = new System.Drawing.Point(217, 120);
             this.FDest.Name = "FDest";
             this.FDest.Size = new System.Drawing.Size(141, 21);
             this.FDest.TabIndex = 33;
@@ -121,7 +121,7 @@
             "Rangpur",
             "Jessore",
             "Rajshashi"});
-            this.FSrc.Location = new System.Drawing.Point(251, 73);
+            this.FSrc.Location = new System.Drawing.Point(217, 69);
             this.FSrc.Name = "FSrc";
             this.FSrc.Size = new System.Drawing.Size(141, 21);
             this.FSrc.TabIndex = 32;
@@ -129,7 +129,7 @@
             // FPrice
             // 
             this.FPrice.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FPrice.Location = new System.Drawing.Point(648, 279);
+            this.FPrice.Location = new System.Drawing.Point(639, 279);
             this.FPrice.Multiline = true;
             this.FPrice.Name = "FPrice";
             this.FPrice.Size = new System.Drawing.Size(141, 23);
@@ -140,7 +140,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label10.Location = new System.Drawing.Point(482, 279);
+            this.label10.Location = new System.Drawing.Point(473, 279);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 22);
             this.label10.TabIndex = 29;
@@ -151,7 +151,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label7.Location = new System.Drawing.Point(85, 178);
+            this.label7.Location = new System.Drawing.Point(76, 167);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 22);
             this.label7.TabIndex = 28;
@@ -162,7 +162,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label5.Location = new System.Drawing.Point(85, 123);
+            this.label5.Location = new System.Drawing.Point(76, 123);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 22);
             this.label5.TabIndex = 27;
@@ -173,7 +173,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label3.Location = new System.Drawing.Point(85, 70);
+            this.label3.Location = new System.Drawing.Point(76, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 22);
             this.label3.TabIndex = 26;
@@ -184,7 +184,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label6.Location = new System.Drawing.Point(482, 64);
+            this.label6.Location = new System.Drawing.Point(473, 69);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(147, 22);
             this.label6.TabIndex = 25;
@@ -192,7 +192,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(648, 64);
+            this.textBox2.Location = new System.Drawing.Point(639, 69);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(141, 31);
@@ -203,7 +203,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label1.Location = new System.Drawing.Point(85, 339);
+            this.label1.Location = new System.Drawing.Point(76, 339);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 22);
             this.label1.TabIndex = 25;
@@ -211,7 +211,7 @@
             // 
             // FCodes
             // 
-            this.FCodes.Location = new System.Drawing.Point(251, 339);
+            this.FCodes.Location = new System.Drawing.Point(217, 335);
             this.FCodes.Multiline = true;
             this.FCodes.Name = "FCodes";
             this.FCodes.Size = new System.Drawing.Size(141, 29);
@@ -222,7 +222,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label9.Location = new System.Drawing.Point(482, 127);
+            this.label9.Location = new System.Drawing.Point(473, 121);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 22);
             this.label9.TabIndex = 25;
@@ -230,10 +230,10 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(648, 125);
+            this.textBox4.Location = new System.Drawing.Point(639, 119);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(141, 33);
+            this.textBox4.Size = new System.Drawing.Size(141, 26);
             this.textBox4.TabIndex = 30;
             // 
             // FClass
@@ -243,7 +243,7 @@
             this.FClass.Items.AddRange(new object[] {
             "Business",
             "Economic"});
-            this.FClass.Location = new System.Drawing.Point(648, 179);
+            this.FClass.Location = new System.Drawing.Point(639, 168);
             this.FClass.Name = "FClass";
             this.FClass.Size = new System.Drawing.Size(141, 27);
             this.FClass.TabIndex = 36;
@@ -253,7 +253,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label11.Location = new System.Drawing.Point(482, 181);
+            this.label11.Location = new System.Drawing.Point(473, 170);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 22);
             this.label11.TabIndex = 35;
@@ -300,7 +300,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label4.Location = new System.Drawing.Point(482, 319);
+            this.label4.Location = new System.Drawing.Point(473, 319);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 22);
             this.label4.TabIndex = 29;
@@ -309,7 +309,7 @@
             // SeatNum
             // 
             this.SeatNum.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeatNum.Location = new System.Drawing.Point(648, 318);
+            this.SeatNum.Location = new System.Drawing.Point(639, 318);
             this.SeatNum.Multiline = true;
             this.SeatNum.Name = "SeatNum";
             this.SeatNum.Size = new System.Drawing.Size(141, 31);
@@ -321,7 +321,7 @@
             this.btnShowFlights.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnShowFlights.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShowFlights.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnShowFlights.Location = new System.Drawing.Point(188, 261);
+            this.btnShowFlights.Location = new System.Drawing.Point(217, 257);
             this.btnShowFlights.Name = "btnShowFlights";
             this.btnShowFlights.Size = new System.Drawing.Size(143, 40);
             this.btnShowFlights.TabIndex = 37;
@@ -334,7 +334,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label8.Location = new System.Drawing.Point(85, 219);
+            this.label8.Location = new System.Drawing.Point(76, 212);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 22);
             this.label8.TabIndex = 28;
@@ -344,7 +344,7 @@
             // 
             this.FTime.CustomFormat = "hh:mm tt";
             this.FTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FTime.Location = new System.Drawing.Point(251, 221);
+            this.FTime.Location = new System.Drawing.Point(217, 210);
             this.FTime.Name = "FTime";
             this.FTime.Size = new System.Drawing.Size(141, 20);
             this.FTime.TabIndex = 34;
@@ -354,7 +354,7 @@
             this.showPriceBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.showPriceBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showPriceBtn.ForeColor = System.Drawing.Color.DarkGray;
-            this.showPriceBtn.Location = new System.Drawing.Point(555, 219);
+            this.showPriceBtn.Location = new System.Drawing.Point(639, 214);
             this.showPriceBtn.Name = "showPriceBtn";
             this.showPriceBtn.Size = new System.Drawing.Size(143, 40);
             this.showPriceBtn.TabIndex = 37;
@@ -367,7 +367,7 @@
             this.total.AutoSize = true;
             this.total.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.total.Location = new System.Drawing.Point(632, 370);
+            this.total.Location = new System.Drawing.Point(639, 370);
             this.total.Name = "total";
             this.total.Size = new System.Drawing.Size(92, 22);
             this.total.TabIndex = 29;
@@ -378,7 +378,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label13.Location = new System.Drawing.Point(519, 370);
+            this.label13.Location = new System.Drawing.Point(473, 370);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(105, 22);
             this.label13.TabIndex = 29;
@@ -388,7 +388,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.showPriceBtn);

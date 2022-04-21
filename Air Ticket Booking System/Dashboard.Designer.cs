@@ -37,16 +37,15 @@
             this.button4 = new System.Windows.Forms.Button();
             this.Flights = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.addflight1 = new Air_Ticket_Booking_System.Addflight();
             this.label2 = new System.Windows.Forms.Label();
-            this.about1 = new Air_Ticket_Booking_System.about();
-            this.setting1 = new Air_Ticket_Booking_System.Setting();
-            this.passengers1 = new Air_Ticket_Booking_System.Passengers();
-            this.booking1 = new Air_Ticket_Booking_System.Booking();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.addflight1 = new Air_Ticket_Booking_System.Addflight();
             this.flights11 = new Air_Ticket_Booking_System.Flights1();
+            this.booking1 = new Air_Ticket_Booking_System.Booking();
+            this.passengers1 = new Air_Ticket_Booking_System.Passengers();
+            this.setting1 = new Air_Ticket_Booking_System.Setting();
+            this.about1 = new Air_Ticket_Booking_System.about();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -79,7 +78,6 @@
             this.button8.TabIndex = 9;
             this.button8.Text = "LOG OUT";
             this.button8.UseVisualStyleBackColor = false;
-            
             // 
             // label4
             // 
@@ -171,117 +169,97 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Azure;
-            this.button2.Location = new System.Drawing.Point(808, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 33);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "✖";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.about1);
-            this.panel3.Controls.Add(this.setting1);
-            this.panel3.Controls.Add(this.passengers1);
-            this.panel3.Controls.Add(this.booking1);
-            this.panel3.Controls.Add(this.flights11);
-            this.panel3.Controls.Add(this.addflight1);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(219, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(842, 526);
-            this.panel3.TabIndex = 6;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Azure;
-            this.button5.Location = new System.Drawing.Point(779, -16);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(35, 40);
-            this.button5.TabIndex = 41;
-            this.button5.Text = "-";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // addflight1
-            // 
-            this.addflight1.Location = new System.Drawing.Point(-1, 0);
-            this.addflight1.Name = "addflight1";
-            this.addflight1.Size = new System.Drawing.Size(842, 526);
-            this.addflight1.TabIndex = 18;
-            this.addflight1.Tag = "Addflight";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.DodgerBlue;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(322, 22);
+            this.label2.Location = new System.Drawing.Point(313, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 31);
             this.label2.TabIndex = 17;
             this.label2.Text = "DASHBOARD";
             // 
-            // about1
+            // panel3
             // 
-            this.about1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.about1.Location = new System.Drawing.Point(3, 0);
-            this.about1.Name = "about1";
-            this.about1.Size = new System.Drawing.Size(842, 526);
-            this.about1.TabIndex = 23;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.panel3.Controls.Add(this.about1);
+            this.panel3.Controls.Add(this.setting1);
+            this.panel3.Controls.Add(this.passengers1);
+            this.panel3.Controls.Add(this.booking1);
+            this.panel3.Controls.Add(this.flights11);
+            this.panel3.Controls.Add(this.addflight1);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(219, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(842, 526);
+            this.panel3.TabIndex = 6;
             // 
-            // setting1
+            // button2
             // 
-            this.setting1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.setting1.Location = new System.Drawing.Point(-1, 0);
-            this.setting1.Name = "setting1";
-            this.setting1.Size = new System.Drawing.Size(842, 526);
-            this.setting1.TabIndex = 22;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Azure;
+            this.button2.Location = new System.Drawing.Point(803, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 33);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "✖";
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // passengers1
+            // addflight1
             // 
-            this.passengers1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.passengers1.Location = new System.Drawing.Point(0, 0);
-            this.passengers1.Name = "passengers1";
-            this.passengers1.Size = new System.Drawing.Size(842, 526);
-            this.passengers1.TabIndex = 21;
-            this.passengers1.Load += new System.EventHandler(this.passengers1_Load);
-            // 
-            // booking1
-            // 
-            this.booking1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.booking1.Location = new System.Drawing.Point(0, 0);
-            this.booking1.Name = "booking1";
-            this.booking1.Size = new System.Drawing.Size(842, 526);
-            this.booking1.TabIndex = 20;
+            this.addflight1.Location = new System.Drawing.Point(0, 0);
+            this.addflight1.Name = "addflight1";
+            this.addflight1.Size = new System.Drawing.Size(842, 526);
+            this.addflight1.TabIndex = 19;
+            this.addflight1.Tag = "Addflight";
             // 
             // flights11
             // 
-            this.flights11.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.flights11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
             this.flights11.Location = new System.Drawing.Point(0, 0);
             this.flights11.Name = "flights11";
             this.flights11.Size = new System.Drawing.Size(842, 526);
-            this.flights11.TabIndex = 19;
+            this.flights11.TabIndex = 20;
+            // 
+            // booking1
+            // 
+            this.booking1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.booking1.Location = new System.Drawing.Point(0, 0);
+            this.booking1.Name = "booking1";
+            this.booking1.Size = new System.Drawing.Size(842, 526);
+            this.booking1.TabIndex = 21;
+            // 
+            // passengers1
+            // 
+            this.passengers1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.passengers1.Location = new System.Drawing.Point(0, 0);
+            this.passengers1.Name = "passengers1";
+            this.passengers1.Size = new System.Drawing.Size(842, 526);
+            this.passengers1.TabIndex = 22;
+            // 
+            // setting1
+            // 
+            this.setting1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.setting1.Location = new System.Drawing.Point(0, 0);
+            this.setting1.Name = "setting1";
+            this.setting1.Size = new System.Drawing.Size(842, 526);
+            this.setting1.TabIndex = 23;
+            // 
+            // about1
+            // 
+            this.about1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.about1.Location = new System.Drawing.Point(0, 0);
+            this.about1.Name = "about1";
+            this.about1.Size = new System.Drawing.Size(842, 526);
+            this.about1.TabIndex = 24;
             // 
             // Dashboard
             // 
@@ -296,6 +274,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "S";
             this.Activated += new System.EventHandler(this.Dashboard_Activated);
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -313,16 +292,15 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
-        private Addflight addflight1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button2;
+        private about about1;
+        private Setting setting1;
         private Passengers passengers1;
         private Booking booking1;
         private Flights1 flights11;
-        private Setting setting1;
-        private about about1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
+        private Addflight addflight1;
     }
 }
