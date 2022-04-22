@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -39,13 +38,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.addflight1 = new Air_Ticket_Booking_System.Addflight();
-            this.flights11 = new Air_Ticket_Booking_System.Flights1();
-            this.booking1 = new Air_Ticket_Booking_System.Booking();
-            this.passengers1 = new Air_Ticket_Booking_System.Passengers();
-            this.setting1 = new Air_Ticket_Booking_System.Setting();
             this.about1 = new Air_Ticket_Booking_System.about();
+            this.setting1 = new Air_Ticket_Booking_System.Setting();
+            this.passengers1 = new Air_Ticket_Booking_System.Passengers();
+            this.booking1 = new Air_Ticket_Booking_System.Booking();
+            this.flights11 = new Air_Ticket_Booking_System.Flights1();
+            this.addflight1 = new Air_Ticket_Booking_System.Addflight();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +52,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Goldenrod;
-            this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button7);
@@ -66,18 +64,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(223, 526);
             this.panel2.TabIndex = 5;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Blue;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(46, 474);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(112, 40);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "LOG OUT";
-            this.button8.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -197,6 +183,54 @@
             this.panel3.Size = new System.Drawing.Size(842, 526);
             this.panel3.TabIndex = 6;
             // 
+            // about1
+            // 
+            this.about1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.about1.Location = new System.Drawing.Point(0, 0);
+            this.about1.Name = "about1";
+            this.about1.Size = new System.Drawing.Size(842, 526);
+            this.about1.TabIndex = 24;
+            // 
+            // setting1
+            // 
+            this.setting1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.setting1.Location = new System.Drawing.Point(0, 0);
+            this.setting1.Name = "setting1";
+            this.setting1.Size = new System.Drawing.Size(842, 526);
+            this.setting1.TabIndex = 23;
+            // 
+            // passengers1
+            // 
+            this.passengers1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.passengers1.Location = new System.Drawing.Point(0, 0);
+            this.passengers1.Name = "passengers1";
+            this.passengers1.Size = new System.Drawing.Size(842, 526);
+            this.passengers1.TabIndex = 22;
+            // 
+            // booking1
+            // 
+            this.booking1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.booking1.Location = new System.Drawing.Point(0, 0);
+            this.booking1.Name = "booking1";
+            this.booking1.Size = new System.Drawing.Size(842, 526);
+            this.booking1.TabIndex = 21;
+            // 
+            // flights11
+            // 
+            this.flights11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
+            this.flights11.Location = new System.Drawing.Point(0, 0);
+            this.flights11.Name = "flights11";
+            this.flights11.Size = new System.Drawing.Size(842, 526);
+            this.flights11.TabIndex = 20;
+            // 
+            // addflight1
+            // 
+            this.addflight1.Location = new System.Drawing.Point(0, 0);
+            this.addflight1.Name = "addflight1";
+            this.addflight1.Size = new System.Drawing.Size(842, 526);
+            this.addflight1.TabIndex = 19;
+            this.addflight1.Tag = "Addflight";
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
@@ -212,54 +246,6 @@
             this.button2.TabIndex = 18;
             this.button2.Text = "✖";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // addflight1
-            // 
-            this.addflight1.Location = new System.Drawing.Point(0, 0);
-            this.addflight1.Name = "addflight1";
-            this.addflight1.Size = new System.Drawing.Size(842, 526);
-            this.addflight1.TabIndex = 19;
-            this.addflight1.Tag = "Addflight";
-            // 
-            // flights11
-            // 
-            this.flights11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
-            this.flights11.Location = new System.Drawing.Point(0, 0);
-            this.flights11.Name = "flights11";
-            this.flights11.Size = new System.Drawing.Size(842, 526);
-            this.flights11.TabIndex = 20;
-            // 
-            // booking1
-            // 
-            this.booking1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
-            this.booking1.Location = new System.Drawing.Point(0, 0);
-            this.booking1.Name = "booking1";
-            this.booking1.Size = new System.Drawing.Size(842, 526);
-            this.booking1.TabIndex = 21;
-            // 
-            // passengers1
-            // 
-            this.passengers1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
-            this.passengers1.Location = new System.Drawing.Point(0, 0);
-            this.passengers1.Name = "passengers1";
-            this.passengers1.Size = new System.Drawing.Size(842, 526);
-            this.passengers1.TabIndex = 22;
-            // 
-            // setting1
-            // 
-            this.setting1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
-            this.setting1.Location = new System.Drawing.Point(0, 0);
-            this.setting1.Name = "setting1";
-            this.setting1.Size = new System.Drawing.Size(842, 526);
-            this.setting1.TabIndex = 23;
-            // 
-            // about1
-            // 
-            this.about1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(215)))));
-            this.about1.Location = new System.Drawing.Point(0, 0);
-            this.about1.Name = "about1";
-            this.about1.Size = new System.Drawing.Size(842, 526);
-            this.about1.TabIndex = 24;
             // 
             // Dashboard
             // 
@@ -289,7 +275,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button1;

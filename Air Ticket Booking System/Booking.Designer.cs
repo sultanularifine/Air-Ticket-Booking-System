@@ -39,11 +39,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.PName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.FCodes = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.MobNo = new System.Windows.Forms.TextBox();
             this.FClass = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -190,13 +190,13 @@
             this.label6.TabIndex = 25;
             this.label6.Text = "Passenger Name";
             // 
-            // textBox2
+            // PName
             // 
-            this.textBox2.Location = new System.Drawing.Point(639, 69);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(141, 31);
-            this.textBox2.TabIndex = 30;
+            this.PName.Location = new System.Drawing.Point(639, 69);
+            this.PName.Multiline = true;
+            this.PName.Name = "PName";
+            this.PName.Size = new System.Drawing.Size(141, 31);
+            this.PName.TabIndex = 30;
             // 
             // label1
             // 
@@ -228,13 +228,13 @@
             this.label9.TabIndex = 25;
             this.label9.Text = "Mobile No";
             // 
-            // textBox4
+            // MobNo
             // 
-            this.textBox4.Location = new System.Drawing.Point(639, 119);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(141, 26);
-            this.textBox4.TabIndex = 30;
+            this.MobNo.Location = new System.Drawing.Point(639, 119);
+            this.MobNo.Multiline = true;
+            this.MobNo.Name = "MobNo";
+            this.MobNo.Size = new System.Drawing.Size(141, 26);
+            this.MobNo.TabIndex = 30;
             // 
             // FClass
             // 
@@ -270,6 +270,7 @@
             this.button1.TabIndex = 37;
             this.button1.Text = "BOOK";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -294,6 +295,7 @@
             this.button4.TabIndex = 37;
             this.button4.Text = "RESET";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label4
             // 
@@ -402,8 +404,8 @@
             this.Controls.Add(this.FSrc);
             this.Controls.Add(this.SeatNum);
             this.Controls.Add(this.FPrice);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.PName);
+            this.Controls.Add(this.MobNo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.FCodes);
             this.Controls.Add(this.label8);
@@ -438,11 +440,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox PName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox FCodes;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox MobNo;
         private System.Windows.Forms.ComboBox FClass;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;

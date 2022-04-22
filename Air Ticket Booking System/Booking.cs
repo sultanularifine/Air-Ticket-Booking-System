@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Air_Ticket_Booking_System
 {
@@ -104,6 +105,40 @@ namespace Air_Ticket_Booking_System
                 totalPrice += Convert.ToInt32(FPrice.Text);
             }
             total.Text=totalPrice.ToString() + " Taka";
+        }
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sulta\Documents\AirticketDb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (FCodes.Text == String.Empty && FSrc.Text == String.Empty && FDest.Text == String.Empty && FDate.Text == String.Empty && FClass.Text == String.Empty && total.Text == String.Empty && MobNo.Text == String.Empty && PName.Text == String.Empty)
+            {
+                MessageBox.Show(" Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string query = "insert into PassengersTbl values('" + PName.Text + "','" + MobNo.Text + "','" + FCodes.Text + "','" + FSrc.SelectedItem.ToString() + "','" + FDest.SelectedItem.ToString() + "','" + FDate.Value.ToString() + "','" + FTime.Value.ToString("hh:mm tt") + "','" + SeatNum.Text + "','" + FClass.SelectedItem.ToString() + "','" + total.Text + "')";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Booking Succesfully");
+                    Con.Close();
+                }
+                catch (Exception Ex)
+
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            FCodes.Text = "";
+            PName.Text = "";
+            MobNo.Text = "";
         }
     }
 }

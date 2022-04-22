@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.FDate = new System.Windows.Forms.DateTimePicker();
@@ -145,6 +145,7 @@
             this.FcodeTb.Name = "FcodeTb";
             this.FcodeTb.Size = new System.Drawing.Size(133, 31);
             this.FcodeTb.TabIndex = 31;
+            this.FcodeTb.VisibleChanged += new System.EventHandler(this.Flights1_Load);
             // 
             // label10
             // 
@@ -218,14 +219,14 @@
             this.FlightDGV.BackgroundColor = System.Drawing.Color.Beige;
             this.FlightDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FlightDGV.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.FlightDGV.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.FlightDGV.DefaultCellStyle = dataGridViewCellStyle2;
             this.FlightDGV.Location = new System.Drawing.Point(18, 274);
             this.FlightDGV.Name = "FlightDGV";
             this.FlightDGV.Size = new System.Drawing.Size(807, 240);
@@ -301,9 +302,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label4.Location = new System.Drawing.Point(450, 82);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 31);
+            this.label4.Size = new System.Drawing.Size(74, 31);
             this.label4.TabIndex = 28;
-            this.label4.Text = "Date";
+            this.label4.Text = "Time";
             // 
             // FTime
             // 

@@ -48,14 +48,14 @@ namespace Air_Ticket_Booking_System
 
         private void FlightDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            FcodeTb.Text = FlightDGV.CurrentRow.Cells[0].Value.ToString();
-            FSrc.SelectedItem = FlightDGV.CurrentRow.Cells[1].Value.ToString();
-            FDest.SelectedItem = FlightDGV.CurrentRow.Cells[2].Value.ToString();
-            FDate.Text = FlightDGV.CurrentRow.Cells[3].Value.ToString();
-            FTime.Text = FlightDGV.CurrentRow.Cells[4].Value.ToString();
-            SeatNum.Text = FlightDGV.CurrentRow.Cells[5].Value.ToString();
-            FClass.Text = FlightDGV.CurrentRow.Cells[6].Value.ToString();
-            FPrice.Text = FlightDGV.CurrentRow.Cells[7].Value.ToString();
+            FcodeTb.Text = FlightDGV.CurrentRow.Cells[1].Value.ToString();
+            FSrc.SelectedItem = FlightDGV.CurrentRow.Cells[2].Value.ToString();
+            FDest.SelectedItem = FlightDGV.CurrentRow.Cells[3].Value.ToString();
+            FDate.Text = FlightDGV.CurrentRow.Cells[4].Value.ToString();
+            FTime.Text = FlightDGV.CurrentRow.Cells[5].Value.ToString();
+            SeatNum.Text = FlightDGV.CurrentRow.Cells[6].Value.ToString();
+            FClass.Text = FlightDGV.CurrentRow.Cells[7].Value.ToString();
+            FPrice.Text = FlightDGV.CurrentRow.Cells[8].Value.ToString();
 
         }
 
@@ -96,7 +96,7 @@ namespace Air_Ticket_Booking_System
                 try
                 {
                     Con.Open();
-                    string query = " update FlightTbl set fsrc='" + FSrc.SelectedItem.ToString() + "',fDest ='" + FDest.SelectedItem.ToString() + "',fDate = '" + FDate.Value.ToString() + "',fPrice=" + FPrice.Text + ",fClass = '" + FClass.SelectedItem.ToString() + "',fcap=" + SeatNum.Text + " Where fcode ='" + FcodeTb.Text + "';";
+                    string query = " update FlightTbl set fsrc='" + FSrc.SelectedItem.ToString() + "',fDest ='" + FDest.SelectedItem.ToString() + "',fDate = '" + FDate.Value.ToString() + "',fPrice=" + FPrice.Text + ",fcap=" + SeatNum.Text + " Where fcode ='" + FcodeTb.Text + "';";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Flight update Succesfully");

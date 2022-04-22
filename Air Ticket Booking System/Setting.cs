@@ -34,7 +34,7 @@ namespace Air_Ticket_Booking_System
                 string query = "delete from FlightTbl";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Flight Delete Succesfully");
+                MessageBox.Show("All Flight Delete Succesfully");
                 Con.Close();
                
 
@@ -45,5 +45,23 @@ namespace Air_Ticket_Booking_System
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Con.Open();
+                string query = "delete from PassengersTbl";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("All Passengers Delete Succesfully");
+                Con.Close();
+
+
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
     }
 }
