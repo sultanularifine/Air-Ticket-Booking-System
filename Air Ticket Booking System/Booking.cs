@@ -107,6 +107,8 @@ namespace Air_Ticket_Booking_System
             total.Text=totalPrice.ToString() + " Taka";
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sulta\Documents\AirticketDb.mdf;Integrated Security=True;Connect Timeout=30");
+        private object textResult;
+        private object txtResult;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -139,6 +141,35 @@ namespace Air_Ticket_Booking_System
             FCodes.Text = "";
             PName.Text = "";
             MobNo.Text = "";
+        }
+
+        private void generate_Click(object sender, EventArgs e)
+        {
+           TxtBox.Clear();
+            TxtBox.Text += "****************************\n";
+            TxtBox.Text += "***     Air Ticket     *****\n";
+            TxtBox.Text += "****************************\n";
+            TxtBox.Text += "Name: " + PName.Text + "\n\n";
+            TxtBox.Text += "Mobile: " + MobNo.Text + "\n\n";
+            TxtBox.Text += "Source: " + FSrc.SelectedItem.ToString() + "\n\n";
+            TxtBox.Text += "Destination: " + FDest.SelectedItem.ToString() + "\n\n";
+            TxtBox.Text += "Date: " + FDate.Value.ToString() + "\n\n";
+            TxtBox.Text += "Time: " + FTime.Value.ToString("hh:mm tt") + "\n\n";
+            TxtBox.Text += "Flight Code: " + FCodes.Text + "\n\n";
+            TxtBox.Text += "Class: " + FClass.SelectedItem.ToString() + "\n\n";
+            TxtBox.Text += "Seat: " + SeatNum.Text + "\n\n";
+            TxtBox.Text += "Total Price: " + total.Text + "\n\n";
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString(TxtBox.Text, new Font("Microsoft Sans Serif", 18, FontStyle.Bold), Brushes.Black, new Point(10, 10));
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
         }
     }
 }
