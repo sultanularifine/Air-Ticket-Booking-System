@@ -91,7 +91,7 @@ namespace Air_Ticket_Booking_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (PName.Text == "" || MobNo.Text == "" || SeatNum1.Text == "" || total.Text == "")
+            if (PName.Text == "" || MobNo.Text == "" || SeatNum1.Text == "" )
             {
                 MessageBox.Show("Missing Information");
             }
@@ -100,7 +100,7 @@ namespace Air_Ticket_Booking_System
                 try
                 {
                     Con.Open();
-                    string query = "update PassengersTbl set PName = '" + PName.Text.ToString() + "',MobNo='"+MobNo.Text.ToString()+"', FDate = '" + FDate.Value.ToString() + "',TPrice=" + total.Text + ",FCap=" + SeatNum1.Text + " Where P_ID ='" + P_Id.Text + "';";
+                    string query = "update PassengersTbl set PName = '" + PName.Text.ToString() + "',MobNo='"+MobNo.Text.ToString()+"', FDate = '" + FDate.Value.ToString() + "',/*TPrice=" + total.Text + ",*/FCap=" + SeatNum1.Text + " Where P_ID ='" + P_Id.Text + "';";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Passengers update Succesfully");
