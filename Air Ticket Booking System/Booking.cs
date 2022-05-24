@@ -106,7 +106,7 @@ namespace Air_Ticket_Booking_System
             }
             total.Text=totalPrice.ToString() + " Taka";
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sulta\Documents\AirticketDb.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sulta\OneDrive\Documents\AirticketDb.mdf;Integrated Security=True;Connect Timeout=30");
         private object textResult;
         private object txtResult;
 
