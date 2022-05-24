@@ -19,12 +19,12 @@ namespace Air_Ticket_Booking_System
         {
             InitializeComponent();
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sulta\OneDrive\Documents\AirticketDb.mdf;Integrated Security=True;Connect Timeout=30");
         private void btnShowFlights_Click(object sender, EventArgs e)
         {
             if (FSrc.Text != "" && FDest.Text != "")
@@ -106,9 +106,8 @@ namespace Air_Ticket_Booking_System
             }
             total.Text=totalPrice.ToString() + " Taka";
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sulta\OneDrive\Documents\AirticketDb.mdf;Integrated Security=True;Connect Timeout=30");
-        private object textResult;
-        private object txtResult;
+        
+        
 
         private void button1_Click(object sender, EventArgs e)
         {

@@ -39,7 +39,6 @@
             this.FSrc = new System.Windows.Forms.ComboBox();
             this.FPrice = new System.Windows.Forms.TextBox();
             this.SeatNum = new System.Windows.Forms.TextBox();
-            this.FcodeTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.FcodeTb = new System.Windows.Forms.ComboBox();
             this.AddFlight11.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,11 +61,11 @@
             this.AddFlight11.Controls.Add(this.fTime);
             this.AddFlight11.Controls.Add(this.FDate);
             this.AddFlight11.Controls.Add(this.FDest);
+            this.AddFlight11.Controls.Add(this.FcodeTb);
             this.AddFlight11.Controls.Add(this.FClass);
             this.AddFlight11.Controls.Add(this.FSrc);
             this.AddFlight11.Controls.Add(this.FPrice);
             this.AddFlight11.Controls.Add(this.SeatNum);
-            this.AddFlight11.Controls.Add(this.FcodeTb);
             this.AddFlight11.Controls.Add(this.label10);
             this.AddFlight11.Controls.Add(this.label9);
             this.AddFlight11.Controls.Add(this.label4);
@@ -200,14 +200,6 @@
             this.SeatNum.Size = new System.Drawing.Size(133, 31);
             this.SeatNum.TabIndex = 20;
             // 
-            // FcodeTb
-            // 
-            this.FcodeTb.Location = new System.Drawing.Point(254, 126);
-            this.FcodeTb.Multiline = true;
-            this.FcodeTb.Name = "FcodeTb";
-            this.FcodeTb.Size = new System.Drawing.Size(133, 31);
-            this.FcodeTb.TabIndex = 18;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -308,6 +300,22 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Flight Code";
             // 
+            // FcodeTb
+            // 
+            this.FcodeTb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FcodeTb.FormattingEnabled = true;
+            this.FcodeTb.Items.AddRange(new object[] {
+            "fl1010",
+            "fl1020",
+            "fl1030",
+            "fl1040",
+            "fl1050",
+            "fl1060"});
+            this.FcodeTb.Location = new System.Drawing.Point(254, 128);
+            this.FcodeTb.Name = "FcodeTb";
+            this.FcodeTb.Size = new System.Drawing.Size(133, 27);
+            this.FcodeTb.TabIndex = 22;
+            // 
             // Addflight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,7 +342,6 @@
         private System.Windows.Forms.ComboBox FSrc;
         private System.Windows.Forms.TextBox FPrice;
         private System.Windows.Forms.TextBox SeatNum;
-        private System.Windows.Forms.TextBox FcodeTb;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -345,5 +352,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker fTime;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox FcodeTb;
     }
 }
