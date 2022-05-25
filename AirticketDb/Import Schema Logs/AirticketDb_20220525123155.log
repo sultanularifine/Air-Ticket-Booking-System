@@ -1,0 +1,87 @@
+5/25/2022 6:31:55 PM	This log contains information about the import schema operation into project 'AirticketDb' on computer 'DESKTOP-E7FTISF' by user 'sulta'.
+5/25/2022 6:31:55 PM	Import of database schema has started.
+5/25/2022 6:32:01 PM	Gathering database credentials
+5/25/2022 6:32:01 PM	Gathering database options
+5/25/2022 6:32:01 PM	Gathering generic database scoped configuration option
+5/25/2022 6:32:01 PM	Gathering users
+5/25/2022 6:32:01 PM	Gathering roles
+5/25/2022 6:32:01 PM	Gathering application roles
+5/25/2022 6:32:01 PM	Gathering role memberships
+5/25/2022 6:32:01 PM	Gathering filegroups
+5/25/2022 6:32:01 PM	Gathering full-text catalogs
+5/25/2022 6:32:01 PM	Gathering assemblies
+5/25/2022 6:32:01 PM	Gathering certificates
+5/25/2022 6:32:01 PM	Gathering asymmetric keys
+5/25/2022 6:32:01 PM	Gathering symmetric keys
+5/25/2022 6:32:01 PM	Gathering encrypted symmetric keys
+5/25/2022 6:32:01 PM	Gathering schemas
+5/25/2022 6:32:01 PM	Gathering XML schema collections
+5/25/2022 6:32:01 PM	Gathering user-defined data types
+5/25/2022 6:32:01 PM	Gathering user-defined types
+5/25/2022 6:32:01 PM	Gathering table types
+5/25/2022 6:32:01 PM	Gathering unique keys for table types
+5/25/2022 6:32:01 PM	Gathering primary keys for table types
+5/25/2022 6:32:01 PM	Gathering indexes for table types
+5/25/2022 6:32:01 PM	Gathering check constraints for table types
+5/25/2022 6:32:01 PM	Gathering default constraints for table types
+5/25/2022 6:32:01 PM	Gathering partition functions
+5/25/2022 6:32:01 PM	Gathering partition schemes
+5/25/2022 6:32:01 PM	Gathering functions
+5/25/2022 6:32:01 PM	Gathering encrypted functions
+5/25/2022 6:32:01 PM	Gathering aggregates
+5/25/2022 6:32:01 PM	Gathering procedures
+5/25/2022 6:32:01 PM	Gathering encrypted procedures
+5/25/2022 6:32:01 PM	Gathering tables
+5/25/2022 6:32:01 PM	Gathering primary keys
+5/25/2022 6:32:01 PM	Gathering unique constraints
+5/25/2022 6:32:01 PM	Gathering foreign keys
+5/25/2022 6:32:01 PM	Gathering default constraints
+5/25/2022 6:32:01 PM	Gathering check constraints
+5/25/2022 6:32:01 PM	Gathering views
+5/25/2022 6:32:01 PM	Gathering encrypted views
+5/25/2022 6:32:01 PM	Gathering indexes
+5/25/2022 6:32:01 PM	Gathering statistics
+5/25/2022 6:32:01 PM	Gathering full-text index stoplists
+5/25/2022 6:32:01 PM	Gathering search property lists
+5/25/2022 6:32:01 PM	Gathering search properties
+5/25/2022 6:32:01 PM	Gathering full-text indexes
+5/25/2022 6:32:01 PM	Gathering column store indexes
+5/25/2022 6:32:01 PM	Gathering spatial indexes
+5/25/2022 6:32:01 PM	Gathering XML indexes
+5/25/2022 6:32:01 PM	Gathering Selective XML indexes
+5/25/2022 6:32:01 PM	Gathering encrypted triggers
+5/25/2022 6:32:01 PM	Gathering triggers
+5/25/2022 6:32:01 PM	Gathering encrypted and clr ddl triggers
+5/25/2022 6:32:01 PM	Gathering ddl triggers
+5/25/2022 6:32:01 PM	Creating edge constraints
+5/25/2022 6:32:01 PM	Gathering synonyms
+5/25/2022 6:32:01 PM	Gathering defaults
+5/25/2022 6:32:01 PM	Gathering data constraint uddt bindings
+5/25/2022 6:32:01 PM	Gathering rules
+5/25/2022 6:32:01 PM	Gathering data constraint uddt bindings
+5/25/2022 6:32:01 PM	Gathering message types
+5/25/2022 6:32:01 PM	Gathering queues
+5/25/2022 6:32:01 PM	Gathering contracts
+5/25/2022 6:32:01 PM	Gathering services
+5/25/2022 6:32:01 PM	Gathering event notifications
+5/25/2022 6:32:01 PM	Gathering remote service bindings
+5/25/2022 6:32:01 PM	Gathering broker priorities
+5/25/2022 6:32:01 PM	Gathering signatures
+5/25/2022 6:32:01 PM	Gathering data compression options
+5/25/2022 6:32:01 PM	Gathering sequence types
+5/25/2022 6:32:01 PM	Gathering security policies
+5/25/2022 6:32:01 PM	Gather column encryption keys
+5/25/2022 6:32:01 PM	Gathering column master keys
+5/25/2022 6:32:01 PM	Gathering external data sources
+5/25/2022 6:32:01 PM	Gathering external file formats
+5/25/2022 6:32:01 PM	Gathering external tables
+5/25/2022 6:32:01 PM	Gathering extended properties
+5/25/2022 6:32:01 PM	Gathering assemblies
+5/25/2022 6:32:01 PM	Gathering credentials
+5/25/2022 6:32:01 PM	Gathering logins
+5/25/2022 6:32:01 PM	Gathering server audits
+5/25/2022 6:32:01 PM	Scanning project for duplicate elements
+5/25/2022 6:32:01 PM	Finished duplicate element processing
+5/25/2022 6:32:01 PM	Finished importing database.
+5/25/2022 6:32:01 PM	A summary of the import was saved to the following location: C:\Users\sulta\source\repos\Air Ticket Booking System\AirticketDb\Import Schema Logs\AirticketDb_20220525123155.log
+5/25/2022 6:32:01 PM	Click Finish to continue...

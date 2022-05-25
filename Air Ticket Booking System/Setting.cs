@@ -13,7 +13,7 @@ namespace Air_Ticket_Booking_System
 {
     public partial class Setting : UserControl
     {
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sulta\OneDrive\Documents\AirticketDb.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=Airticket;Integrated Security=True;Pooling=False");
         public Setting()
         {
             InitializeComponent();
